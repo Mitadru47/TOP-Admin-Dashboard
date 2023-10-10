@@ -1,0 +1,40 @@
+html{
+
+    margin: 5px;
+    border: 1px solid red;
+}
+
+body{
+
+    margin: 5px;
+    border: 1px solid green;
+}
+
+.primary-container{
+
+    margin: 5px;
+    border: 1px solid blue;
+
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.primary-container div{
+
+    margin: 5px;
+    border: 1px solid purple;
+}
+
+.sidebar{
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.header{
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+.mainContent{
+    grid-area: 2 / 2 / 4 / 5;
+}
