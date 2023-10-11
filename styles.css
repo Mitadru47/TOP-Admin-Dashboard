@@ -29,7 +29,7 @@ body{
 
 .sidebar{
 
-    height: 100vh;
+    /* height: 100vh; */
     grid-area: 1 / 1 / 4 / 2;
 
     display: flex;
@@ -216,7 +216,7 @@ body{
 .greet{
 
     font-family: 'Wellfleet', monospace;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .name{
@@ -249,25 +249,46 @@ body{
     grid-template-columns: repeat(3, 1fr);
 
     background-color: #F5F5DC;
+    padding: 20px;
 }
 
 .mainContent .sectionA{
+
+    /* border: 1px solid olivedrab; */
     grid-area: 1 / 1 / 4 / 3;
+}
+
+.mainContent .sectionA .heading{
+
+    margin: 5px;
+    margin-bottom: 0;
+
+    padding: 5px;
+
+    /* border: 1px solid olivedrab; */
+}
+
+.heading{
+    font-family: 'Martian Mono', monospace;
 }
 
 .projects{
 
     display: grid;
 
+    gap: 20px;
+    margin: 5px;
+
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
 }
 
 .projects div{
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
 }
 
 .cards{
+
     display: flex;
     background-color: #FFCF9D;
 }
@@ -275,20 +296,67 @@ body{
 .cardHighlight{
 
     background-color: #FFB000;
-    width: 1px;
+    width: 20px;
+
+    /* margin-left: 10px; */
+}
+
+.cardContent{
+
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.cardContent div{
+
+}
+
+.title{
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.description{
+
+    font-family: 'Slabo 27px', serif;
+    height: 12.5vh;
+
+    padding: 5px;
+    padding-top: 0;
+}
+
+.buttons{
+
+    display: flex;
+    justify-content: end ;
+
+    gap: 5px;
 }
 
 .mainContent .sectionB{
 
+    border: 1px solid olivedrab;
     grid-area: 1 / 3 / 4 / 4;
 }
 
 .mainContent .sectionB div{
 
+    margin: 5px;
+    padding: 5px;
+
     border: 1px solid peru;
 }
 
-.slots, .users{
+.announcements, .trending{
     background-color: #FFCF9D;
 }
 
