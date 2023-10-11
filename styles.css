@@ -1,19 +1,19 @@
 html{
 
-    margin: 5px;
-    border: 1px solid red;
+    /* margin: 5px;
+    border: 1px solid red; */
 }
 
 body{
 
-    margin: 5px;
-    border: 1px solid green;
+    margin: 0px;
+    /* border: 1px solid green; */
 }
 
 .primary-container{
 
-    margin: 5px;
-    border: 1px solid blue;
+    /* margin: 5px; */
+    /* border: 1px solid blue; */
 
     /* height: 100vh; */
 
@@ -23,20 +23,78 @@ body{
 
 .primary-container div{
 
-    margin: 5px;
-    border: 1px solid purple;
+    /* padding: 5px; */
+    /* border: 1px solid purple; */
 }
 
 .sidebar{
 
+    height: 100vh;
     grid-area: 1 / 1 / 4 / 2;
 
     display: flex;
     flex-direction: column;
+
+    background-color: #004225;
+    color: white;
+
+    padding: 10px;
+    gap: 20px;
+
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .sidebar div{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
+}
+
+.sidebar .sectionA{
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    gap: 10px;
+}
+
+#dashboardText{
+
+    padding-left: 5px;
+    font-size: 2.25rem;
+}
+
+#dashboardLogo{
+
+    height: 35px;
+    width: 35px;
+}
+
+.sidebarIcons{
+
+    height: 30px;
+    width: 30px;
+}
+
+.sidebar .sectionB div{
+
+    display: flex;
+    font-size: 1.2rem;
+
+    align-items: center;
+
+    gap: 10px;
+    padding: 5px;
+}
+
+.sidebar .sectionC div{
+
+    display: flex;
+    font-size: 1.2rem;
+
+    align-items: center;
+
+    gap: 10px;
+    padding: 5px;
 }
 
 .header{
@@ -45,6 +103,8 @@ body{
 
     display: flex;
     flex-direction: column;
+
+    background-color: #FFCF9D;
 }
 
 .header div{
@@ -67,6 +127,8 @@ body{
 
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
+
+    background-color: #F5F5DC;
 }
 
 .mainContent .sectionA{
@@ -85,12 +147,29 @@ body{
     border: 1px solid orangered;
 }
 
+.cards{
+    display: flex;
+    background-color: #FFCF9D;
+}
+
+.cardHighlight{
+
+    background-color: #FFB000;
+    width: 1px;
+}
+
 .mainContent .sectionB{
+
     grid-area: 1 / 3 / 4 / 4;
 }
 
 .mainContent .sectionB div{
+
     border: 1px solid peru;
+}
+
+.slots, .users{
+    background-color: #FFCF9D;
 }
 
 .users{
