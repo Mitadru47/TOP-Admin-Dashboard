@@ -18,7 +18,7 @@ body{
     /* height: 100vh; */
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: minmax(300px, 1fr) 4fr; 
 }
 
 .primary-container div{
@@ -97,6 +97,12 @@ body{
     padding: 5px;
 }
 
+.secondary-container{
+
+    display: flex;
+    flex-direction: column;
+}
+
 .header{
 
     grid-area: 1 / 2 / 2 / 5;
@@ -104,19 +110,133 @@ body{
     display: flex;
     flex-direction: column;
 
+    padding: 10px 20px;
+    padding-bottom: 0;
+
     background-color: #FFCF9D;
 }
 
 .header div{
-    border: 1px solid olivedrab
+    /* border: 1px solid olivedrab; */
 }
 
 .header .sectionA{
+
     display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2px;
+    padding: 5px;
+}
+
+.header .sectionA div{
+
+    margin-bottom: 0;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px 5px;
+}
+
+#searchIcon{
+
+    height: 20px;
+    width: 20px;
+}
+
+#searchBar{
+
+    border: 0;
+    border-radius: 20px;
+
+    padding: 10px;
+
+    height: 25px;
+    width: 30vw;
+
+    background-color: #BCA37F;
+}
+
+#notificationLogo{
+
+    height: 20px;
+    width: 20px;
+}
+
+.userLogoSmall{
+
+    height: 40px;
+    width: 40px;
+}
+
+.userPalette{
+
+    gap: 10px;
+    align-items: center;
+}
+
+.username{
+
+    font-family: 'Wellfleet', monospace;
+    font-size: 1.25rem;;
 }
 
 .header .sectionB{
+
     display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+ 
+    margin: 2px;
+    padding: 5px;
+}
+
+.header .sectionB div{
+
+    margin: 5px;
+    display: flex;
+}
+
+.userLogoLarge{
+
+    height: 60px;
+    width: 60px;
+}
+
+.greetings{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.greet{
+
+    font-family: 'Wellfleet', monospace;
+    font-size: 0.75rem;
+}
+
+.name{
+
+    font-family: 'Wellfleet', monospace;
+    font-size: 1.5rem;
+}
+
+.buttonSection div button{
+
+    padding: 7.5px 25px;
+
+    border: 0;
+    border-radius: 20px;
+
+    background-color: #004225;
+    color: white;
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1rem;
 }
 
 .mainContent{
