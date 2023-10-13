@@ -327,6 +327,7 @@ body{
 .description{
 
     font-family: 'Slabo 27px', serif;
+    height: 12.5vh;
 
     padding: 5px;
     padding-top: 0;
